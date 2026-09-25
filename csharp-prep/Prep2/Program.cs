@@ -68,11 +68,6 @@ class Program
 
 
 
-
-
-
-
-
         // Print results
         Console.WriteLine($"You got an {LetterGrade}{Sign}");
         if (value >= 70)
