@@ -30,7 +30,8 @@ class Program
         {
         Console.Write("what is the magic number?: ");
         guess = int.Parse(Console.ReadLine());
-
+        
+        //  Ditermin if the users guess is to high or to low
         if (guess > number)
             {
                 Console.WriteLine("That was too high!");
@@ -47,6 +48,10 @@ class Program
             }
         guesses++;
         }
+        // Ask user if they want to play again!
+        // If "y" then repeat else end the loop
+
+        Console.WriteLine();
         Console.Write("Do you want to continue playing? (y/n)? ");
         string yes_no = Console.ReadLine();
         Console.WriteLine();
