@@ -105,6 +105,9 @@ public void DataGatherLoop()
 public void ResumeDisplay()
     {
         Console.WriteLine("Resume: ");
+        Console.WriteLine();
+        // Display each of the seired data from the selected class iterations using the .Display method
+        // made in the Job Class
         foreach(Job i in _Jobs)
         {
             i.Display();
