@@ -39,9 +39,10 @@ class Entry
 
     public void GetDate()
     {
-        Console.Write("Date(MM/DD/Year): ");
-        string Date = Console.ReadLine();
-        _date = Date;
+        DateTime theCurrentTime = DateTime.Now;
+        string dateText = theCurrentTime.ToShortDateString();
+        _date = dateText;
+        Console.WriteLine($"{dateText}");
     }
 
     public void GetResponse()
