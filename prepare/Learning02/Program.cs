@@ -73,7 +73,8 @@ public void Display()
 public class Resume
 {
     List<Job> _Jobs = new List<Job>();
-    // Constructor Resume
+
+    // Constructor of Resume
     public Resume()
     {
     }
@@ -83,7 +84,7 @@ public void DataGatherLoop()
         while (loop)
         {
         
-        //instigate a nwe version of the clas Job
+        //instigate a new version of the class Job
         Job job = new Job();
 
         // Gather Relivent Dater per the iteration of _job
@@ -91,8 +92,8 @@ public void DataGatherLoop()
         job.GetJobTittle();
         job.GetStartYear();
         job.GetEndYear();
-        // job.Display();
-        _Jobs.Add(job);
+        // job.Display(); -----------Not needed here but later
+        _Jobs.Add(job); // ----Links to memory addresses to the heap and does not actualy store the whole class
         Console.Write("Would you like to add another job? (y/n): ");
         string response = Console.ReadLine();
         if (response != "y")
