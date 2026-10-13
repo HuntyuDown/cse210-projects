@@ -18,3 +18,4 @@ class Program
     }
 }
 
+// Alt sshift f Auto formats my code

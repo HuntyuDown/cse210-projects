@@ -30,7 +30,7 @@ class Entry
 
         // Pick one randomly
         Random rand = new Random();
-        int num = rand.Next(0,list.Count); 
+        int num = rand.Next(0, list.Count);
 
         //Assighn the random string
         Console.WriteLine($"{list[num]}");
