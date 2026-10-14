@@ -27,6 +27,9 @@ class Entry
         list.Add("How did I see the hand of the Lord in my life today?");
         list.Add("What was the strongest emotion I felt today?");
         list.Add("If I had one thing I could do over today, what would it be?");
+        list.Add("What is your exostential thought of the day");
+        list.Add("What questions from your studys where answered today?");
+        list.Add("Whose day did you ruin today?");
 
         // Pick one randomly
         Random rand = new Random();

@@ -4,6 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop02 World!");
+        // Test Entry class
+        // Entry entry = new Entry();
+        // entry.GetDate();
+        // entry.GetPromptGeneratiopn();
+        // entry.GetResponse();
+        // entry.DisplayEntry();
+
+        // Test Jurnal loop
+        Jurnal entry = new Jurnal();
+        entry.JurnalLoop();
+
     }
 }
+
+// Alt sshift f Auto formats my code
