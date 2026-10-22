@@ -1,7 +1,6 @@
 // This class needs 3 lists. One holds the scripture list, one has a bool of a comparable list size,
 //and the last compares lists and is then called to display.
 
-using System.Security.Cryptography.X509Certificates;
 
 class ScriptureMem
 {
