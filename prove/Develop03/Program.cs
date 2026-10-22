@@ -87,8 +87,8 @@ class Program
 
             // Quiter function
             int quiter = 0;
-            List<bool> checkBool = mem.GetBoolList();
-            foreach (bool Boolian in checkBool)
+            endProgram = mem.GetBoolList();
+            foreach (bool Boolian in endProgram)
             {
                 if (Boolian == true)
                 {
