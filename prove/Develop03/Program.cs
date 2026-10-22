@@ -21,7 +21,7 @@ class Program
         ScripRef reff = null;
         ScriptureMem mem = null;
 
-        Console.Write("Would you like to imput your own scripture? (y/n)");
+        Console.Write("Would you like to imput your own scripture? (y/n): ");
         string Yn = Console.ReadLine();
         if (Yn == "y")
         {
@@ -34,14 +34,16 @@ class Program
             int sVerse = int.Parse(Console.ReadLine());
             Console.Write("End Verse:");
             int eVerse = int.Parse(Console.ReadLine());
-            Console.Write("Scripture");
+            Console.Write("Scripture: ");
             string scripture = Console.ReadLine();
 
+            Console.Clear();
             reff = new ScripRef(book, chapter, sVerse, eVerse);
             mem = new ScriptureMem(scripture);
             reff.DisplayHeader();
             mem.BuildShowScripture();
             mem.DisplayScript();
+            Console.WriteLine("\nPress enter to continue");
             Console.ReadLine();
         }
         else
@@ -52,6 +54,7 @@ class Program
             reff.DisplayHeader();
             mem.BuildShowScripture();
             mem.DisplayScript();
+            Console.WriteLine("\nPress enter to continue");
             Console.ReadLine();
         }
 

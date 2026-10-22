@@ -56,7 +56,7 @@ class ScripRef
         }
         else
         {
-            Console.Write($"{GetBook()} {GetChapter()}:({GetFirstVerse()} - {GetLastVerse()}):");
+            Console.Write($"{GetBook()} {GetChapter()}:({GetFirstVerse()} - {GetLastVerse()}): ");
         }
     }
 
