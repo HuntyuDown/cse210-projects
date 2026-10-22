@@ -20,6 +20,7 @@ class Program
 
         ScripRef reff = null;
         ScriptureMem mem = null;
+        List<bool> endProgram = null;
 
         Console.Write("Would you like to imput your own scripture? (y/n): ");
         string Yn = Console.ReadLine();
@@ -40,6 +41,7 @@ class Program
             Console.Clear();
             reff = new ScripRef(book, chapter, sVerse, eVerse);
             mem = new ScriptureMem(scripture);
+
             reff.DisplayHeader();
             mem.BuildShowScripture();
             mem.DisplayScript();
@@ -80,6 +82,23 @@ class Program
                 mem.ShowOriginal();
                 Console.WriteLine("\nPress enter to continue\n");
                 Console.Read();
+            }
+
+
+            // Quiter function
+            int quiter = 0;
+            List<bool> checkBool = mem.GetBoolList();
+            foreach (bool Boolian in checkBool)
+            {
+                if (Boolian == true)
+                {
+                    quiter = quiter + 1;
+                }
+            
+            }
+            if(quiter == mem.Git_n())
+            {
+                break;
             }
 
         }

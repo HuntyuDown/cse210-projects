@@ -114,4 +114,14 @@ class ScriptureMem
         Console.WriteLine($"{display}");
     }
 
+     public List<bool> GetBoolList()
+    {
+        return _isHideScripture;
+    }
+    
+    public int Git_n()
+    {
+        return _n;
+    }
+
 }
