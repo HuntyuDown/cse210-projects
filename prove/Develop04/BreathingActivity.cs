@@ -29,10 +29,10 @@ class BreathingActivity : Activity
 
 
     // This pulls from the Timer class to get dellay and repititions
-    public void GetBreathingPatern(float duration)
+    public void GetBreathingPatern()
     {
         Animator breath = new Animator();
-        float reps = duration / 10;
+        float reps = _duration / 10;
         reps = MathF.Round(reps);
         if (reps == 0)
         {

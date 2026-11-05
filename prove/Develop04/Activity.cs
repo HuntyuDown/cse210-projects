@@ -3,7 +3,7 @@ class Activity
 
     protected string _intro;
     protected string _conclusion;
-    protected int _duration;
+    protected float _duration;
 
 
     public Activity(int duration, string intro, string conclusion)

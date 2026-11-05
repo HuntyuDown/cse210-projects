@@ -28,7 +28,7 @@ class Animator
         Console.Clear();
         Console.WriteLine("\nBreath in 6 seconds...");
         Console.WriteLine();
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i <= 5; i++)
         {
             Console.Write(_breath[i]);
             Thread.Sleep(1000);
@@ -38,7 +38,7 @@ class Animator
         Console.Clear();
         Console.WriteLine("\nBreath out 4 seconds...");
         Console.WriteLine();
-        for (int i = 5; i > 0; i--)
+        for (int i = 5; i >= 0; i--)
         {
             Console.Write(_breath[i]);
             Thread.Sleep(666);
@@ -50,7 +50,7 @@ class Animator
 
     public void FigitSpiner()
     {
-        for (int j = 0; j < _spiner; j++)
+        for (int j = 0; j < _spiner+1; j++)
         {
             for (int i = 0; i < 3; i++)
             {
