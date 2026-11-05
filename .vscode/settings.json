@@ -1,10 +1,9 @@
 {
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": false,
-    "scminput": false,
-    "csharp": false
+    "scminput": false
   },
   "python-envs.defaultEnvManager": "ms-python.python:system"
 }
